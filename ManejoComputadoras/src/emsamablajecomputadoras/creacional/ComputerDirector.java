@@ -8,6 +8,7 @@ public class ComputerDirector {
 	}
 	
 	public void ConstructComputer() {
+		builder.crearComputador();
 		builder.buildMainboard();
 		builder.buildSOperativo();
 		builder.buildComputador();
