@@ -12,6 +12,8 @@ public abstract class BuilderComputer {
    
    public abstract void buildMainboard();
    public abstract void buildSOperativo();
+   public abstract void buildComputador();
+   
    
 
 }
