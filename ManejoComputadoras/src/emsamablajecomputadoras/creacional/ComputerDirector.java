@@ -10,6 +10,7 @@ public class ComputerDirector {
 	public void ConstructComputer() {
 		builder.buildMainboard();
 		builder.buildSOperativo();
+		builder.buildComputador();
 	}
 	
 	public Computador getBuilderComputer() {
