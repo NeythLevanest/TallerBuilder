@@ -19,8 +19,12 @@ public class AsusROGEBuilder extends BuilderComputer{
 
 	@Override
 	public void buildComputador() {
-		// TODO Auto-generated method stub
-		
+		computador.setModelo("ROG");
+		computador.setMarca("Asus");
+		computador.setRam(32);
+		computador.setTipoRam("ddr4");
+		computador.setTipoAlmacenamiento("HDD");
+		computador.setAlmacenamiento(1000);
 	}
 
 }
