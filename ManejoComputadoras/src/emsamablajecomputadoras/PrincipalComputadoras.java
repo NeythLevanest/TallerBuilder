@@ -37,7 +37,6 @@ public class PrincipalComputadoras {
 		System.out.println("Procesador: "+roge.getPlaca().toString());
 		
 		System.out.println(zenbook.toString());
-		System.out.println(zenbook.toString());
 		System.out.println("Nombre: "+zenbook.getMarca());
 		System.out.println("Modelo: "+zenbook.getModelo());
 		System.out.println("Ram: " +zenbook.getTipoRam()+" "+roge.getRam());
