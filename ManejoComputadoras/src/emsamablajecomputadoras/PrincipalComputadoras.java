@@ -16,28 +16,36 @@ public class PrincipalComputadoras {
 	 */
 	public static void main(String[] args) {
 		// Necesito ensamblar 2 computadoras
-		// AsusROGE
-<<<<<<< HEAD
-		Computador roge = new Computador(/*todos los atributos
-=======
-		ComputerDirector directorRoge = new ComputerDirector(new AsusROGEBuilder());
-		directorRoge.ConstructComputer();
-	    Computador computadorARoge = directorRoge.getBuilderComputer();
-	    computadorARoge.toString();
-	    computadorARoge.getTipoRam();
-		
-		Computador roge = new Computador();
-		
-		
->>>>>>> 21e2b6565669aad6b36d7e16757e7f5c6b0317b9
-		
+	    ComputerDirector comDirectorRoge = new ComputerDirector(new AsusROGEBuilder());
+	    ComputerDirector comDirectorZenbook = new ComputerDirector(new AsusZenbookBuilder());
+	    comDirectorRoge.constructComputer();;
+	    comDirectorZenbook.constructComputer();;
+	    
+	    // AsusROGE
+		//Computador roge = new Computador();
+		Computador roge = comDirectorRoge.getBuilderComputer();
 		// AsusZenbook
-		Computador zenbook = new Computador(/*todos los atributos*/);
-		
+		//Computador zenbook = new Computador();
+		Computador zenbook = comDirectorZenbook.getBuilderComputer();
 		//Mostrar las caracteristicas de ambas computadoras 
 		
-		roge.toString();
-		zenbook.toString();
+		System.out.println(roge.toString());
+		System.out.println("Nombre: "+roge.getMarca());
+		System.out.println("Modelo: "+roge.getModelo());
+		System.out.println("Ram: " +roge.getTipoRam()+" "+roge.getRam());
+		System.out.println("Sistema Operativo: "+roge.getOs().toString());
+		System.out.println("Procesador: "+roge.getPlaca().toString());
+		
+		System.out.println(zenbook.toString());
+		System.out.println(zenbook.toString());
+		System.out.println("Nombre: "+zenbook.getMarca());
+		System.out.println("Modelo: "+zenbook.getModelo());
+		System.out.println("Ram: " +zenbook.getTipoRam()+" "+roge.getRam());
+		System.out.println("Sistema Operativo: "+zenbook.getOs().toString());
+		System.out.println("Procesador: "+zenbook.getPlaca().toString());
+		
+		
+		
 
 	}
 

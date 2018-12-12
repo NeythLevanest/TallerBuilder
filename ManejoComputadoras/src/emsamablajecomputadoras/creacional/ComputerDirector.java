@@ -7,11 +7,14 @@ public class ComputerDirector {
 		this.builder=builder;
 	}
 	
-	public void ConstructComputer() {
+	public void constructComputer() {
 		builder.crearComputador();
 		builder.buildMainboard();
 		builder.buildSOperativo();
 		builder.buildComputador();
+	}
+	public void setComputadorBuilder(BuilderComputer builder) {
+		this.builder = builder;
 	}
 	
 	public Computador getBuilderComputer() {
