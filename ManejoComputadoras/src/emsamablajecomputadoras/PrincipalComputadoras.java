@@ -24,6 +24,7 @@ public class PrincipalComputadoras {
 	    // AsusROGE
 		//Computador roge = new Computador();
 		Computador roge = comDirectorRoge.getBuilderComputer();
+		
 		// AsusZenbook
 		//Computador zenbook = new Computador();
 		Computador zenbook = comDirectorZenbook.getBuilderComputer();
